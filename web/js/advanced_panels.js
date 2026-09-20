@@ -113,7 +113,7 @@ export function renderAttentionAtlas(container, data) {
     if (isSynthetic) {
         const note = document.createElement("div");
         note.style.cssText = "padding:8px 12px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);border-radius:8px;margin-bottom:10px;font-size:11px;color:#fbbf24;font-family:'IBM Plex Mono',monospace;";
-        note.textContent = "ℹ Showing activation heatmap (proxy for attention) — add attention data to viz_data.json for full attention atlas.";
+        note.textContent = "ℹ Showing activation heatmap (proxy for attention) — regenerate the run with scripts/build_runs.py for the full attention atlas.";
         container.appendChild(note);
     }
 

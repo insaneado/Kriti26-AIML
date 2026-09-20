@@ -1,0 +1,197 @@
+{
+  "board_size": 10,
+  "runs": [
+    {
+      "id": "r00-99",
+      "file": "runs/r00-99.json",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        9,
+        9
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r09-90",
+      "file": "runs/r09-90.json",
+      "start": [
+        0,
+        9
+      ],
+      "end": [
+        9,
+        0
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r99-00",
+      "file": "runs/r99-00.json",
+      "start": [
+        9,
+        9
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r90-09",
+      "file": "runs/r90-09.json",
+      "start": [
+        9,
+        0
+      ],
+      "end": [
+        0,
+        9
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r00-09",
+      "file": "runs/r00-09.json",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        0,
+        9
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.47
+    },
+    {
+      "id": "r00-90",
+      "file": "runs/r00-90.json",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        9,
+        0
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r44-99",
+      "file": "runs/r44-99.json",
+      "start": [
+        4,
+        4
+      ],
+      "end": [
+        9,
+        9
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r00-44",
+      "file": "runs/r00-44.json",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        4,
+        4
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r27-72",
+      "file": "runs/r27-72.json",
+      "start": [
+        2,
+        7
+      ],
+      "end": [
+        7,
+        2
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r50-59",
+      "file": "runs/r50-59.json",
+      "start": [
+        5,
+        0
+      ],
+      "end": [
+        5,
+        9
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r05-95",
+      "file": "runs/r05-95.json",
+      "start": [
+        0,
+        5
+      ],
+      "end": [
+        9,
+        5
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    },
+    {
+      "id": "r33-66",
+      "file": "runs/r33-66.json",
+      "start": [
+        3,
+        3
+      ],
+      "end": [
+        6,
+        6
+      ],
+      "board_size": 10,
+      "frames": 48,
+      "accuracy_pct": 100.0,
+      "size_mb": 1.48
+    }
+  ]
+}

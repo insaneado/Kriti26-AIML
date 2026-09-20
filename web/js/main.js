@@ -416,7 +416,25 @@ function renderLiveAnalysisFrame(frame) {
 // ── Load data ─────────────────────────────────────────────────────────────────
 async function loadData() {
     try {
-        const response = await fetch('data/viz_data.json?v=' + Date.now());
+        // Which pre-computed run to show. setup.html passes ?run=<id>, matching
+        // an entry in data/runs/index.json. Falls back to the legacy single
+        // dataset so an old bookmark still resolves.
+        const runId = new URLSearchParams(window.location.search).get('run');
+
+        // No ?run means the dashboard was opened directly rather than through
+        // the picker; fall back to the first run in the manifest.
+        let target = runId;
+        if (!target) {
+            const index = await fetch('data/runs/index.json?v=' + Date.now()).then(r => r.json());
+            target = index.runs[0].id;
+        }
+
+        let response = await fetch(`data/runs/${encodeURIComponent(target)}.json?v=${Date.now()}`);
+        if (!response.ok && runId) {
+            console.warn(`run '${runId}' not found, falling back to the first run`);
+            const index = await fetch('data/runs/index.json?v=' + Date.now()).then(r => r.json());
+            response = await fetch(`data/runs/${index.runs[0].id}.json?v=${Date.now()}`);
+        }
         if (!response.ok) throw new Error('Failed to load data');
         state.data = await response.json();
 
